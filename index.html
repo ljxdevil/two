@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body,
+        .wrap {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        header {
+            height: 2.5rem;
+            line-height: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            background: #333;
+            color: white;
+        }
+        
+        header span {
+            margin: 0 15px;
+        }
+        
+        header b {
+            text-align: left;
+            flex: 1;
+        }
+        
+        .section {
+            flex: 1;
+            position: relative;
+        }
+        
+        .big {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5)
+        }
+        
+        .box {
+            width: 90%;
+            background: white;
+            height: 60%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -45%;
+            margin-top: -50%;
+            border-radius: 20px;
+        }
+        
+        .top {
+            width: 50%;
+            margin: 25px auto;
+        }
+        
+        .top dd {
+            font-size: .9rem;
+            text-align: center;
+        }
+        
+        .top dl dt {
+            width: 100%;
+        }
+        
+        .top dl dt img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .bot {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .bot p {
+            height: 1.8rem;
+            border: 1px solid #ccc;
+            display: flex;
+            margin: 10px;
+            line-height: 1.8rem;
+        }
+        
+        .bot img {
+            height: 80%;
+            width: auto;
+        }
+        
+        .bot input {
+            flex: 1;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span>X</span>
+            <b>设备测试预约系统</b>
+            <span>。</span>
+        </header>
+        <div class="section">
+            <div class="big">
+                <div class="box">
+                    <div class="top">
+                        <dl>
+                            <dt><img src="./img/logo_01.png" alt=""></dt>
+                            <dd>
+                                设备测试预约系统
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="bot">
+                        <p><img src="./img/icon_01.png" alt=""><input type="text" placeholder="请输入手机号"></p>
+                        <p><img src="./img/icon_03.png" alt=""><input type="password" placeholder="请输入密码"></p>
+                        <p><input type="button" value="登录账号开始预约" style="background:lightgreen"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
